@@ -14,7 +14,20 @@ This is a personal project for posting content on Tumblr using pytumblr2 API in 
 
 
 ## Usage
+The system has the ability for:
 
+	📌 User authentication
+
+	📌 Posting, queing, drafting content (Photos) to Tumblr
+
+	📌 Displaying files (.JPGS) from the directory and date created
+
+	
+Benefists of this type of system are:
+
+	✔️ Faster and better management of content
+	✔️ Possible option to schedule the script to run on specific datetime using Scheduled Tasks on Windows
+	✔️ No need to use website for posting
 
 
 ## License
