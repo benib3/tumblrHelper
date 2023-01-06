@@ -16,8 +16,7 @@ best_tags=["#tumblr", "#aesthetic", "#love", "#like", "#tumblrgirl", "#follow",
            "#a" ,"#amor" ,"#tumblraesthetic" ,"#tiktok"]
 
 
-my_tags= ["#love", "#art", "#life", "#hot", "#tumblr", "#art style ",
-            "#digital art", "#me", "#roshi", "#zxxxcx", "#women","#aesthetic"]
+
 
 
 
@@ -55,14 +54,14 @@ if(choose_post_type==0):
 
     caption=input("Enter caption: ")
     pic=input("Enter photo name: ")
-    post_queue_photo(client,blog_name,caption,pic,my_tags)
+    post_queue_photo(client,blog_name,caption,pic,best_tags)
 elif(choose_post_type==1):
     #DISPLAYS FILES IN PATH INPUTED
     show_jpgs()
 
     caption=input("Enter caption: ")
     pic=input("Enter photo name: ") 
-    post_photo(client,blog_name,caption,pic,my_tags)
+    post_photo(client,blog_name,caption,pic,best_tags)
 ##TODO upload multiple files   
 elif(choose_post_type==2):
     #DISPLAYS FILES IN PATH INPUTED
@@ -71,7 +70,7 @@ elif(choose_post_type==2):
     cprint("Psst, heads up: You can upload up to 30 image files!","blue")
     caption=input("Enter caption: ")
     photos=input_to_array()
-    post_draft_multiple(client,blog_name,caption,photos,my_tags)
+    post_draft_multiple(client,blog_name,caption,photos,best_tags)
 else:
     print("You've choose no option.Shutting down... :(")
     exit;
